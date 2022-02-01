@@ -1,0 +1,36 @@
+<div class="container spacing">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Product List</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Date Created</th>
+                        <th>Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of products">
+                        <th>{{ p.id }}</th>
+                        <th>{{ p.name }}</th>
+                        <th>{{ formatCreatedDate(p.dateCreated) }}</th>
+                        <th>{{ p.type.name }}</th>
+                        <th>
+                            <a (click)=onEditProduct(p.id) class="btn btn-primary">Edit</a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="float: right;">
+        <button (click)="onNewProduct()" class="btn btn-primary left">Add</button> <br />
+        <p></p>
+        <button (click)="onNewType()" class="btn btn-primary left">Add Type</button>
+    </div>
+</div>

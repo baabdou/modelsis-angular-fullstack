@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="alert alert-danger" *ngIf="mode==1">
+      <strong>Error </strong> while updating product
+    </div>
+    <div class="alert alert-success" *ngIf="mode==2">
+        <strong>Product </strong> create successfully
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">Update Product</div>
+      <div class="panel-body">
+        <form #f="ngForm" (ngSubmit) ="onUpdateProduct(f)">
+          <div class="form-group">
+            <label class="control-label">Name *</label>
+            <input type="text" name="name" [(ngModel)]="p.name" class="form-control">
+          </div>
+          <!-- <div class="form-group">
+            <label class="control-label">Type *</label>
+            <input type="date" name="dateCreated" ngModel class="form-control">
+          </div> -->
+          <div class="form-group">
+            <select name="type" [(ngModel)]="p.type.name">
+                <option value="" disabled>Choose a type</option>
+                <option *ngFor="let type of types" [ngValue]="type">
+                {{ type.name }}
+                </option>
+            </select>
+            </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button (click)="onCancel()" class="btn btn-primary">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>

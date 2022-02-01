@@ -6,11 +6,11 @@ Ce project est generé avec [Angular CLI] version 13.2.0. (Projet de gestion des
 La version de Node js utilisée est v14.18.1
 
 ## Installation
-`- git clone https://github.com/baabdou/modelsis-angular-fullstack.git`
-`- cd modelsis-angular-fullstack`
-`- npm i`
-`- npm i @auth0/angular-jwt`
-`- npm i bootstrap@3.3.7`
+- `git clone https://github.com/baabdou/modelsis-angular-fullstack.git`
+- `cd modelsis-angular-fullstack`
+- `npm i`
+- `npm i @auth0/angular-jwt`
+- `npm i bootstrap@3.3.7`
 
 ## Development server
 

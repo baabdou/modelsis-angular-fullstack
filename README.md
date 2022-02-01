@@ -15,4 +15,7 @@ La version de Node js utilisée est v14.18.1
 ## Development server
 
 Executer `ng serve` pour lancer le serveur de developpement. Naviger vers l'adresse `http://localhost:4200/`.
+Se connecter avec l'utilisateur par defaut créer sur la partie backend
+username:  `admin`
+password: `1234`
 
